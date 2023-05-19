@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "name": "http2-incremental-delivery",
+  "author": "Denis Badurina <badurinadenis@gmail.com>",
+  "license": "ISC",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "vitest"
+  },
+  "dependencies": {
+    "typescript": "^5.0.4",
+    "vitest": "^0.31.1"
+  }
+}
