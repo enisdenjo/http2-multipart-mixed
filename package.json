@@ -7,6 +7,7 @@
     "node": ">=18"
   },
   "type": "module",
+  "main": "server.js",
   "scripts": {
     "type-check": "tsc --noEmit",
     "test": "vitest"
