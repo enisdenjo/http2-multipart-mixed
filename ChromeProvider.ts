@@ -57,7 +57,7 @@ export default class ChromeProvider implements BrowserProvider {
 
   async close() {
     await this.browser?.deleteSession?.();
-    process.exit(0);
+    process.exit();
   }
 
   catchError(_cb: (error: Error) => Awaitable<void>) {
