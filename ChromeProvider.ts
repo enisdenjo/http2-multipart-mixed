@@ -1,6 +1,7 @@
 import { Vitest, Awaitable } from "vitest";
 import { remote, Browser } from "webdriverio";
 
+/** interface matching that described in https://vitest.dev/config/#browser-provider */
 interface BrowserProvider {
   name: string;
   getSupportedBrowsers(): readonly string[];
@@ -55,13 +56,12 @@ export default class ChromeProvider implements BrowserProvider {
   }
 
   async close() {
-    await Promise.all([
-      this.browser?.sessionId ? this.browser?.deleteSession?.() : null,
-    ]);
+    await this.browser?.deleteSession?.();
+    process.exit(0);
   }
 
   catchError(_cb: (error: Error) => Awaitable<void>) {
-    // we dont care about the provider error
+    // we dont care about provider errors
     return () => {};
   }
 }
