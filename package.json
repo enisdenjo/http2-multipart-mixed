@@ -6,11 +6,16 @@
   "engines": {
     "node": ">=18"
   },
+  "type": "module",
   "scripts": {
+    "type-check": "tsc --noEmit",
     "test": "vitest"
   },
   "dependencies": {
+    "@vitest/browser": "^0.31.1",
+    "meros": "^1.2.1",
     "typescript": "^5.0.4",
-    "vitest": "^0.31.1"
+    "vitest": "^0.31.1",
+    "webdriverio": "^8.10.2"
   }
 }
