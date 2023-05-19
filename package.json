@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "http2-incremental-delivery",
+  "name": "http2-multipart-mixed",
   "author": "Denis Badurina <badurinadenis@gmail.com>",
   "license": "ISC",
   "engines": {
