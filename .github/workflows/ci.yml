@@ -31,5 +31,7 @@ jobs:
           node-version: 18
       - name: Install
         run: npm i
+      - name: Start
+        run: node . &
       - name: Test
         run: npm test
