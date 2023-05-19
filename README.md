@@ -1,0 +1,1 @@
+[server.js](/server.js) starts an HTTP/2 server (with self-signed certificates) that always responds using mixed multipart **without** the `Transfer-Encoding` header. Then [meros.test.ts](/meros.test.ts) tests whether [meros](https://github.com/maraisr/meros) works. [It does.](https://github.com/enisdenjo/http2-multipart-mixed/actions/workflows/ci.yml)
