@@ -44,15 +44,6 @@ export default class ChromeProvider implements BrowserProvider {
             ],
             headless: this.ctx.config.browser.headless,
           },
-          chromeOptions: {
-            args: [
-              // allow self signed certificates
-              "--allow-insecure-localhost",
-              // deactivate cors
-              "--disable-web-security",
-            ],
-            headless: this.ctx.config.browser.headless,
-          },
         },
       });
     }
