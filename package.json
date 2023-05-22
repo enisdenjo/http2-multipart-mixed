@@ -10,13 +10,11 @@
   "main": "server.js",
   "scripts": {
     "type-check": "tsc --noEmit",
-    "test": "vitest"
+    "test": "NODE_TLS_REJECT_UNAUTHORIZED=0 vitest"
   },
   "dependencies": {
-    "@vitest/browser": "^0.31.1",
-    "meros": "^1.2.1",
+    "@whatwg-node/fetch": "^0.9.0",
     "typescript": "^5.0.4",
-    "vitest": "^0.31.1",
-    "webdriverio": "^8.10.2"
+    "vitest": "^0.31.1"
   }
 }
